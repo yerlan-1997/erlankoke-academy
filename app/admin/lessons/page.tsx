@@ -35,7 +35,7 @@ if (pdfFile) {
 }
 
 const { error } = await supabase.from("lessons").insert({ ...form, pdf_url, course_id: courseId });
-    if (error) setMsg(error.message); else { setMsg("Қосылды"); setForm({ title:"", sort_order:1, is_free:false, video_url:"", content_md:"" }); load(); }
+    if (error) setMsg(error.message); else { setMsg("Қосылды"); setForm({ title:"", sort_order:1, is_free:false, video_url:"", pdf_url: "", content_md:"" }); load(); }
   }
 
   return (
