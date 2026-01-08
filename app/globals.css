@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { @apply bg-snow text-ink; }
+a { @apply underline decoration-sun decoration-4 underline-offset-4; }
